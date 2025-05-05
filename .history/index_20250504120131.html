@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pradnya Baviskar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pradnya Baviskar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilephoto.jpg" alt="Pradnya Baviskar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p2">Hello, I'm</p>
+        <h1 class="title">Pradnya Baviskar</h1>
+        <p class="section__text__p2">Software Developer - Full Stack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/pradnya_baviskar-3.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+       
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Full Stack Developer with over 3 years of experience building scalable, production-ready web applications. 
+              My expertise lies in backend development using Java, SQL Server, Oracle, and Spring Boot, combined with frontend technologies like JavaScript and React.js. 
+              I have contributed to large-scale projects by improving performance and delivering complex financial technology solutions for top-tier banks, ensuring both efficiency and innovation.
+              I’m passionate about writing clean, maintainable code and collaborating within cross-functional teams to solve challenging problems.
+            </p>
+            <p style=" margin-top: 2%;">
+              With a Master's degree in Software Engineering and Testing, I am committed to staying ahead in the evolving tech landscape by learning and implementing emerging technologies. 
+              Whether it’s designing sleek front-end interfaces or optimizing complex back-end systems, I strive to build applications that are efficient, user-friendly, and impactful.
+              Let’s collaborate and create innovative digital solutions together!
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+ <div class="testimonials-container">
+  <p class="section__text__p1">Hear From Others</p>
+  <h1 class="title">Testimonial</h1>
+    <div class="testimonial">
+      
+      <p class="testtext">
+        "I have been a witness to Pradnya's growth as a professional during her stint with ICICI Bank, as a Software Developer from Servosys.
+         From developing minor features as a new-comer to handling complete applications as a senior resource, Pradnya has shown great promise in a relatively short span of time. 
+         She has not only expanded her understanding of technology but also added relevant functional knowledge to her repertoire of skills. 
+         Her cordial demeanour and communication skills make her a good team-player as well.
+         I am positive that this combination of her aptitude and attitude will add great value to any organisation/team she works with."
+        
+      </p>
+     
+      <span class="numbertext">Pratiyush Jena</span>
+        <span class="destext">Digitisation & Automation | DVP @ Kotak Mahindra Bank</span>
+    </div>
+
+   
+    <div class="testimonial">
+    
+      <p class="testtext">
+        "Pradnya was working as Developer in my team, during the course Pradnya proved her independent, hardworking, problem solving and technical skills,
+        She completed the assigned task on time. She is understanding and can manage stuff on own. 
+        I recommend Pradnya for development position and with right guidance and support she is an asset for team."
+       
+      </p>
+      
+      <span class="numbertext">Nawaz Shaikh</span>
+      <span class="destext">Senior Business Analyst | Product Management | Fintech</span>
+    </div>
+
+
+    <div class="testimonial">
+    
+      <p class="testtext">
+        "Pradnya is an experienced professional in all aspects of software development. We used to discuss different approaches for the tasks.
+        She always had a positive influence on team at stressful times. I never got a chance to work with her in the same team but I really appreciate all of her efforts she used to put in projects to finish them by the deadlines.
+        She will be a good asset to any organization and I am happy to recommend her."
+       
+      </p>
+     
+      <span class="numbertext">Upasana Garg</span>  
+      <span class="destext"> R&D Software Engineer @Dassault Systems</span>
+    </div>
+
+    <div class="testimonial">
+
+      <p class="testtext">
+       "Pradnya is one of the most dedicated professionals I’ve worked with and is willing to put that extra help whenever required. 
+        Her expertise as a developer is considerable, and it helped the team always. 
+        Her contribution is valuable to the side, and I highly recommend Pradnya and would love to work with her again."
+       
+      </p>
+      
+      <span class="numbertext">Mahima Tayal</span>
+      <span class="destext">Lead Software Engineer at UKG</span>
+    </div>
+    <div>
+      <a class="prev">
+        <img class="icon" src="./assets/leftarrow.png" alt="left" />
+        
+      </a>
+      <a class="next">
+        <img class="icon" src="./assets/rightarrow.png" alt="right" />
+      </a>
+    </div>
+  </div>
+    
+
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article class="skills">
+                
+                <div>
+                  <h3 class="skills">Java</h3>
+                </div>
+              </article>
+              <article class="skills">
+                
+                <div>
+                  <h3 class="skills">JavaScript</h3>
+                
+                </div>
+              </article>
+              <article class="skills">
+               
+                <div>
+                  <h3 class="skills">SQL</h3>
+                 
+                </div>
+              </article>
+              <article class="skills">
+                
+                <div>
+                  <h3 class="skills">C++</h3>
+                  
+                </div>
+              </article>
+              <article class="skills">
+                
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article class="skills">
+                
+                <div>
+                  <h3 class="skills">C</h3>
+                </div>
+              </article>
+             
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Technologies</h2>
+            <div class="article-container">
+              <article>
+               
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>ReactJS</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>NodeJS</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>ExpressJS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases & Testing Tools</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Oracle</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>SoapUI</h3>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>Git & GitHub</h3>
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              
+              
+              
+              <article>
+                
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Jira</h3>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3 class="skills">Agile Methodology</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My Book Nest</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pradnya-07/Pradnya-s_Library'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://pradnya-s-library.onrender.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/scam.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spam Email Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pradnya-07/Spam_Email_Detection'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://spam-email-detection-9in7.onrender.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/forecast.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather Forecast</h2>
+            <div class="btn-container" style="margin-top: 14%;">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pradnya-07/Weather-Dashboard'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://pradnya-07.github.io/Weather-Dashboard/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+
+    <div class="testimonials-container">
+      <p class="section__text__p1">Hear From Others</p>
+      <h1 class="title">Corporate Projects</h1>
+        <div class="testimonial">
+          <span class="numbertext">Goods and Services Tax Overdraft</span>
+          <p class="testtext">
+            Worked on the GST Overdraft (GSTOD) Facility project aimed at providing collateral-backed working
+            capital to Micro, Small, and Medium Enterprises (MSMEs) based on their Goods and Services Tax (GST) returns.
+            The solution simplifies credit assessment by leveraging GST data, enabling quick digital processing and eliminating the need for traditional financial documents. 
+            The facility supports Overdraft (OD), Letter of Credit (LC), and Bank Guarantee (BG) options with loan amounts up to ₹3 crore.
+          </p>
+         
+        </div>
+    
+       
+        <div class="testimonial">
+          <span class="numbertext">Loan Origination and Processing System (LOPS)</span>
+          <p class="testtext">
+            Contributed to the development and enhancement of LOPS,
+            an end-to-end digital platform that automates the loan application, underwriting, and disbursement processes for ICICI Bank's retail asset business.
+            The system integrates with core banking, credit scoring, and compliance systems to ensure seamless processing and regulatory adherence. 
+            Key objectives included reducing manual intervention, improving processing times, and enhancing customer experience through a user-friendly interface.
+          </p>
+        
+        </div>
+    
+    
+        <div class="testimonial">
+        
+          <p class="testtext">
+            Led the development of a real-time fund settlement system designed to credit merchant payments instantly through ICICI Bank’s digital platforms.
+            The solution focused on streamlining settlement from Eazypay Point-of-Sale (POS) transactions directly into merchants’ current accounts, eliminating delays associated with traditional disbursement workflows. 
+            Unlike conventional processes that rely on downstream transaction data, this system leverages pre-verified inputs from sanctioning systems to ensure merchant eligibility upfront, enabling faster and more secure settlements. 
+            This significantly enhanced the merchant experience by improving cash flow, reducing settlement time, and increasing operational efficiency.
+          </p>
+         
+          <span class="numbertext">Upasana Garg</span>  
+          <span class="destext"> R&D Software Engineer @Dassault Systems</span>
+        </div>
+    
+        <div class="testimonial">
+    
+          <p class="testtext">
+           "Pradnya is one of the most dedicated professionals I’ve worked with and is willing to put that extra help whenever required. 
+            Her expertise as a developer is considerable, and it helped the team always. 
+            Her contribution is valuable to the side, and I highly recommend Pradnya and would love to work with her again."
+           
+          </p>
+          
+          <span class="numbertext">Mahima Tayal</span>
+          <span class="destext">Lead Software Engineer at UKG</span>
+        </div>
+        <div>
+          <a class="prev">
+            <img class="icon" src="./assets/leftarrow.png" alt="left" />
+            
+          </a>
+          <a class="next">
+            <img class="icon" src="./assets/rightarrow.png" alt="right" />
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <section id="contact">
+      
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:pradnyabaviskar56p@gmail.com">pradnyabaviskar56p@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Pradnya Baviskar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
